@@ -12,7 +12,6 @@ const menuHam = document.querySelector("#menu-ham"),
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false; // Auto scroll
 const intervalTime = 5000;
 let slideInterval;
 
@@ -65,8 +64,3 @@ prev.addEventListener('click', e => {
   }
 });
 
-// Auto slide
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
