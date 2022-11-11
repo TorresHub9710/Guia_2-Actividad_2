@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css" />
+</head>
+<body>
+    <div id="container">
+        <h3>Comparte tus recetas con los demás</h3>
+        <form>
+            <p>Titulo de tu Receta:</p>
+            <input type="text" name="recetaName" id="recetaName" placeholder="Digite el Nombre de la Receta" size="35">
+        </form>
+            <br>
+            <br>
+        <form>
+            <p>Tiempo de preparación:</p>
+            <input type="time" name="cookTime" id="cookTime">
+        </form>
+            <br>
+            <br>
+        <form>
+            <p>Lista de ingredientes:</p>
+            <input type="text" name="ingredients" id="ingredients" placeholder="Liste aqui sus ingredientes" size="35">
+        </form>
+            <br>
+            <br>
+        <form>
+            <p>Descripción e instrucciones:</p>
+            <input type="text" name="" id="descripcion_E_Instruciones" placeholder="Descripcion e Instrucciones", size="45">
+        </form>
+        <br>
+        <form>
+            <p>Sube un video de preparación (opcional):</p>
+            <input type="text" name="video" id="video" placeholder="Link del video" size="35" height="10">
+            <button class="button"><span>Cargar<br>video</span></button>
+
+        </form>
+            <br>
+        <form>
+            <p>Coloca una imagen de portada (Opcional):</p>
+            <input type="text" name="image" id="image" placeholder="Link de la imagen" size="35" height="10">
+            <button class="button">Cargar<br>imagen</button>    
+
+        </form>
+        <br>
+        <br>
+        <button class="button" id="botonGuardar" onclick="captura()"><span>Comparte</span></button>    
+    </div>
+    <script type="text/javascript" src="formulario.js"></script>
+</body>
+</html>
