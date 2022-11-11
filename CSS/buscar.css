@@ -32,6 +32,14 @@ header {
     font-family: 'Dosis';
 }
 
+.logo a {
+    color: #000
+}
+
+.logo a::after {
+    color: #000;
+}
+
 .logo h1 b {
     color: #ff7300da;
 }
