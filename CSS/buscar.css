@@ -369,15 +369,14 @@ header {
 }
 
 .tabla-nutricional {
-    width: 30%;
     margin: auto;
-    border: solid 5px #ff7300;;
+    border: solid 5px #ff7300;
     border-radius: 10px;
-    column-gap: 10px;
+    width: 40%;
 }
 .tabla-nutricional th {
     padding: 10px;
-    font-size: 30px;
+    font-size: 1.2rem;
     font-family: 'Poppins';
     font-weight: 700;
     border: solid 5px #ff7300;;
@@ -388,7 +387,7 @@ header {
     padding: 10px;
     border: solid 5px #ff7300;;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: 'Dosis';
     font-weight: 300;
 }
