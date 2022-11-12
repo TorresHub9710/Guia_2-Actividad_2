@@ -3,132 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="tips.css">
+    <link rel="stylesheet" href="../CSS/tips.css">
+    <script src="https://kit.fontawesome.com/20e83717b8.js" crossorigin="anonymous"></script>
     <title>Tips de cocina</title>
 
 </head>
 <body>
-
-    <div class="head">
-
-        <div class="logo">
-            <a href="#">Logo</a>
+<!----------------HEADER------------------->
+    <header>
+        <div class="contenido-header">
+            <div class="logo">
+                <h1><a href="../HTML/principal.html">Futuristic<b>Cousine</a></b></h1>
+            </div>
+            <div class="menu" id="mostrar-menu">
+                <nav>
+                    <ul>
+                        <li><a href="../HTML/principal.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li><a href="../HTML/buscar.html"><i class="fa-solid fa-magnifying-glass"></i>Búsqueda</a></li>
+                        <li class="menu-selected"><a href="../HTML/tips.html" class="text-menu-selected"><i class="fa-regular fa-lightbulb"></i>Tips</a></li>
+                        <li><a href="../HTML/formulario.html"><i class="fa-solid fa-share-from-square"></i>Comparte</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-        <nav class="navbar">
-            <a href="#">Tips de Cocina</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Conacto</a>
-            <a href="#">Productos</a>
-            <a href="#">Precio</a>
-        </nav>
-
-    </div>
-
-    <header class="content header">
-        <h3 class="title">Futuristic Cousine</h3>
-        <p>
-            Para tener una mejor experiencia, cuando de cocinar se trata estas en el lugar correcto
-            aca nosotros te daremos algunos tips o consejos que te ayudaran mucho
-              
-        </p>
-<img src="/uno.jpg" alt="">
-        <div class="btn-home">
-            <a href="#" class="btn">Saber mas</a>
-            <a href="#" class="btn">Saber mas</a>
+        
+        <div id="icono-menu">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </header>
+<!----------------MAIN------------------->
+    <div class="contenedor-principal" id="move-contenido">
 
-    <section class="content sau">
-
-
-
-        <h2 class="title">Buscar</h2>
-        <div class="btn-home">
-            
-            <a href="#" class="btn">Saber mas</a>
-            <a href="#" class="btn">Saber mas</a>
-
-         
+        <div class="container-portada">
+            <div class="container-text-portada">
+                <h1>Tips de Cocina</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magnam, voluptate perspiciatis odio quaerat eius beatae enim repudiandae, at quidem eum, saepe minima delectus voluptatem aspernatur aperiam fuga impedit inventore. Facere!</p>
+            </div>
         </div>
-        <h3>Lorem</h3>
-        
-        <p>Consejos</p>
-        
-        
-
-            <div class="box">
-                
-                <h3>Tip numero uno</h3>
-                <p>Para tener un buen arroz buscamos tenemos un gran tip el cual permite, saber más de como tener una excelente 
-                    cocción de este gran producto. </p>
-                    
-            </div>
-            <div class="box">
-                
-                <h3>tip numero dos</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-            <div class="box">
-                
-                <h3>tip numero tres</h3>
-                <p>labore molestias consectetur veniam</p>
-            </div>
-            <div  class="box">
-                <h3> tip numero cuatro</h3>
-                <p>labore molestia consectur veniam</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="content about">
-
-
-
-
-        <h3 class="title">Nosotros</h3>
-
-
-
-        <p>Estamos orgullosos de que cuentes con nosotros para que puedas conocer nuevas recetas
-            y algunas que ya conoces, esto ahra que te vuelvas el gran chef que siempre
-            quiciste ser. 
-             
-             
-        </p>
-
-        <a href="#" class="btn">Saber mas</a>
-
-    </section>
-
-    <section class="content price">
-
-        <article class="contain">
-            <h2 class="title">Precio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Ut soluta similique 
-                quia reprehenderit eligendi aliquam. Sit 
-                odio impedit quibusdam. Velit corporis, 
-                optio debitis quidem ex ipsam rerum dolorem autem sequi.
-            </p>
-
-            <a href="#" class="btn">Saber precio</a>
-
-        </article>
-
-    </section>
-
-    <section class="content contact">
-        <h2 class="title">Contacto</h2>
-        <p>12345678</p>
-        
+<!--------------Consejos----------------->  
+            <h3 id="titulo-seccion">Consejos</h3>
+            <div class="container-tips">
             
-    </section>
-    
+                <div class="box">
+                    <h3>Tip numero uno</h3>
+                    <img src="../img/uno.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto earum maiores unde itaque tempora possimus sequi, debitis consequuntur rerum aliquam repellat recusandae nihil ipsa. Aut consequuntur quasi odio sapiente vero tempore, atque quibusdam maxime consequatur magnam ea quam laboriosam possimus similique eum! Distinctio ut cumque recusandae in ea, quam laborum?</p>
+                </div>
+
+                <div class="box">
+                    <h3>Tip numero dos</h3>
+                    <img src="../img/dos.jpg">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto numquam ut voluptatem itaque, nisi enim illo beatae corrupti repudiandae quo aliquid, ipsa magnam mollitia cumque quod minima ea voluptas. Voluptates tempore dolor placeat quod odio, dicta minima? Exercitationem minus ullam eaque. Quod commodi deserunt ipsam assumenda qui voluptatem voluptas delectus.</p>               
+                </div>
+
+                <div class="box">
+                    <h3>Tip numero tres</h3>
+                    <img src="../img/tres.jpg">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto numquam ut voluptatem itaque, nisi enim illo beatae corrupti repudiandae quo aliquid, ipsa magnam mollitia cumque quod minima ea voluptas. Voluptates tempore dolor placeat quod odio, dicta minima? Exercitationem minus ullam eaque. Quod commodi deserunt ipsam assumenda qui voluptatem voluptas delectus.</p>              
+                </div>
+
+                <div  class="box">
+                    <h3> Tip numero cuatro</h3>
+                    <img src="../img/cuatro.jpg">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto numquam ut voluptatem itaque, nisi enim illo beatae corrupti repudiandae quo aliquid, ipsa magnam mollitia cumque quod minima ea voluptas. Voluptates tempore dolor placeat quod odio, dicta minima? Exercitationem minus ullam eaque. Quod commodi deserunt ipsam assumenda qui voluptatem voluptas delectus.</p>              
+                </div>
+
+                <div class="box">
+                    <h3>Tip numero cinco</h3>
+                    <img src="../img/cinco.jpg">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto numquam ut voluptatem itaque, nisi enim illo beatae corrupti repudiandae quo aliquid, ipsa magnam mollitia cumque quod minima ea voluptas. Voluptates tempore dolor placeat quod odio, dicta minima? Exercitationem minus ullam eaque. Quod commodi deserunt ipsam assumenda qui voluptatem voluptas delectus.</p>                
+                </div>
+
+                <div class="box">
+                    <h3>Tip numero seis</h3>
+                    <img src="../img/seis.jpg">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto numquam ut voluptatem itaque, nisi enim illo beatae corrupti repudiandae quo aliquid, ipsa magnam mollitia cumque quod minima ea voluptas. Voluptates tempore dolor placeat quod odio, dicta minima? Exercitationem minus ullam eaque. Quod commodi deserunt ipsam assumenda qui voluptatem voluptas delectus.</p>               
+                </div>
+            </div>
+    </div>
+<!-------------FOOTER-------------------->
+    <div class="contenedor-footer">
+        <footer>
+            <div class="logo-footer">
+                <img src="../img/Futuristic-Cousine.png" alt="logo FutristicCousine">
+            </div>
+
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f icono-footer"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram icono-footer"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter icono-footer"></i></a>
+                <a href="https://co.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in icono-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>&reg; 2022 Futuristic Cousine - Todos los derechos reservados</h4>
+        </footer>
+    </div>
+
+
+    <script src="../JS/formulario.js"></script>
 </body>
 </html>
