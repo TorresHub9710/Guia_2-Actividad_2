@@ -19,7 +19,7 @@
                 <nav>
                     <ul>
                         <li><a href="../HTML/principal.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Búsqueda</a></li>
+                        <li><a href="../HTML/buscar.html"><i class="fa-solid fa-magnifying-glass"></i>Búsqueda</a></li>
                         <li><a href="#"><i class="fa-regular fa-lightbulb"></i>Tips</a></li>
                         <li class="menu-selected"><a href="../HTML/formulario.html" class="text-menu-selected"><i class="fa-solid fa-share-from-square"></i>Comparte</a></li>
                     </ul>
@@ -32,59 +32,59 @@
         </div>
     </header>
     
-    <div class="contenedor-principal" id="move-contenido"></div>
+    <div class="contenedor-principal" id="move-contenido">
 <!---------------------PORTADA------------------>
-    <div class="container-portada">
-        <div class="container-text-portada">
-            <h1>Comparte tus recetas con los demás</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Magnam, voluptate perspiciatis odio quaerat eius beatae enim repudiandae, at quidem eum, saepe minima delectus voluptatem aspernatur aperiam fuga impedit inventore. Facere!</p>
+        <div class="container-portada">
+            <div class="container-text-portada">
+                <h1>Comparte tus recetas con los demás</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Magnam, voluptate perspiciatis odio quaerat eius beatae enim repudiandae, at quidem eum, saepe minima delectus voluptatem aspernatur aperiam fuga impedit inventore. Facere!</p>
+            </div>
+        </div>
+    <!-----------------MAIN---------------------------->
+        <div id="container">
+            <h3>Ingresa aquí los datos</h3>
+            <form>
+                <p>Titulo de tu Receta:</p>
+                <input type="text" class="input-text" name="recetaName" id="recetaName" placeholder="Digite el Nombre de la Receta">
+            </form>
+                <br>
+                <br>
+            <form>
+                <p>Tiempo de preparación:</p>
+                <input type="time" class="input-text" name="cookTime" id="cookTime">
+            </form>
+                <br>
+                <br>
+            <form>
+                <p>Lista de ingredientes:</p>
+                <input type="text" class="input-text" name="ingredients" id="ingredients" placeholder="Liste aqui sus ingredientes">
+            </form>
+                <br>
+                <br>
+            <form>
+                <p>Descripción e instrucciones:</p>
+                <input type="text" class="input-text" name="" id="descripcion_E_Instruciones" placeholder="Descripcion e Instrucciones">
+            </form>
+            <br>
+            <form>
+                <p>Sube un video de preparación (Opcional):</p>
+                <input type="text" class="input-text" name="video" id="video" placeholder="Link del video">
+                <button class="button"><span>Cargar vídeo</span></button>
+
+            </form>
+                <br>
+            <form>
+                <p>Coloca una imagen de portada (Opcional):</p>
+                <input type="text" class="input-text" name="image" id="image" placeholder="Link de la imagen">
+                <button class="button">Cargar imagen</button>    
+
+            </form>
+            <br>
+            <br>
+            <button class="button" id="botonGuardar" onclick="captura()"><span>Comparte</span></button>    
         </div>
     </div>
-<!-----------------MAIN---------------------------->
-    <div id="container">
-        <h3>Ingresa aquí los datos</h3>
-        <form>
-            <p>Titulo de tu Receta:</p>
-            <input type="text" class="input-text" name="recetaName" id="recetaName" placeholder="Digite el Nombre de la Receta">
-        </form>
-            <br>
-            <br>
-        <form>
-            <p>Tiempo de preparación:</p>
-            <input type="time" class="input-text" name="cookTime" id="cookTime">
-        </form>
-            <br>
-            <br>
-        <form>
-            <p>Lista de ingredientes:</p>
-            <input type="text" class="input-text" name="ingredients" id="ingredients" placeholder="Liste aqui sus ingredientes">
-        </form>
-            <br>
-            <br>
-        <form>
-            <p>Descripción e instrucciones:</p>
-            <input type="text" class="input-text" name="" id="descripcion_E_Instruciones" placeholder="Descripcion e Instrucciones">
-        </form>
-        <br>
-        <form>
-            <p>Sube un video de preparación (Opcional):</p>
-            <input type="text" class="input-text" name="video" id="video" placeholder="Link del video">
-            <button class="button"><span>Cargar vídeo</span></button>
-
-        </form>
-            <br>
-        <form>
-            <p>Coloca una imagen de portada (Opcional):</p>
-            <input type="text" class="input-text" name="image" id="image" placeholder="Link de la imagen">
-            <button class="button">Cargar imagen</button>    
-
-        </form>
-        <br>
-        <br>
-        <button class="button" id="botonGuardar" onclick="captura()"><span>Comparte</span></button>    
-    </div>
-    <script type="text/javascript" src="../JS/formulario.js"></script>
 
 <!----------------------Footer------------------------>
     <div class="contenedor-footer">
