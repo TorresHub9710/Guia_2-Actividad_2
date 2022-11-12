@@ -54,6 +54,8 @@ body {
   
 .menu-links ul li{
   margin: 0 25px;
+  color: #000;
+  font-weight: 700;
   }
   
   .menu-links ul li a:hover{
