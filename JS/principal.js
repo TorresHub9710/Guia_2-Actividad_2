@@ -1,5 +1,5 @@
-const menuHam = document.querySelector("#menu-ham"),
-  menuLinks= document.querySelector("#menu-links")
+const menuHam = document.querySelector("#menu-ham");
+const menuLinks= document.querySelector("#menu-links")
 
 
   menuHam.addEventListener("click",(e)=>{
@@ -11,7 +11,7 @@ const menuHam = document.querySelector("#menu-ham"),
 
 const slides = document.querySelectorAll(".slide");
 const next = document.querySelector("#next");
-const prev = document.querySelector('#prev');
+const prev = document.querySelector("#prev");
 
 
 

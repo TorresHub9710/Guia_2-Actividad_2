@@ -232,9 +232,8 @@ header {
 
 #botonGuardar{
     display: inline-flex;
-    position: center;
-    margin-left: 50px auto;
-    position: center;
+    justify-content: center;
+    margin-left: auto ;
     padding-left: 30px;
     padding-right: 30px;
 }
