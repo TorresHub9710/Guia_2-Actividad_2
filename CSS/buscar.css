@@ -399,6 +399,26 @@ header {
     font-family: 'Dosis';
     font-weight: 500;
 }
+
+/*------------------MASH UP---------------------------------*/
+
+#titulo-mapa {
+    color: #ff7300da;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+
+
+.mapa {
+    border: solid 10px #ff7300;
+    border-radius: 30px;
+    height: 400px;
+    width: 30%;
+    margin: 20px auto
+}
 /*------------------FOOTER---------------------------------*/
 
 .contenedor-footer {
