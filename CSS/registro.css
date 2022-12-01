@@ -63,7 +63,7 @@ header {
 
 .menu nav ul li {
     height: 100%;
-    margin: 0px 20px;
+    margin: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,7 +265,7 @@ main{
     display: flex;
     justify-content: center;
     backdrop-filter: blur(10px);
-    background-color: rgba(0,128,255,0.7);
+    background-color: rgba(255, 123, 0, 0.815);
 
 }
 
@@ -278,11 +278,17 @@ main{
 .caja__trasera div p,
 .caja__trasera div button{
     margin-top: 30px;
+    font-family: 'Dosis';
+    font-weight: 600;
+    margin-left: 20px;
 }
 
 .caja__trasera div h3{
-    font-weight: 300;
+    font-family: 'Poppins';
+    font-weight: 600;
     font-size: 26px;
+    margin-left: 20px;
+    
 }
 
 .caja__trasera button{
@@ -299,7 +305,7 @@ main{
 
 .caja__trasera button:hover{
     background: white;
-    color:#46A2FD;
+    color:#000;
 }
 
 /*------Formularios-------*/
@@ -321,13 +327,14 @@ main{
     background: #fff;
     position: absolute;
     border-radius: 20px;
+    margin-bottom: 25px;
 }
 
 .conenedor__login-register form h2{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color:#46A2FD;
+    color:#ff7300;
 }
 
 .conenedor__login-register form input{
@@ -342,9 +349,15 @@ main{
     padding: 10px 40px;
     margin-top: 40px;
     border: none;
-    font-size: 14px;
-    background: #46A2FD;
-    color:#F2F2F2;
+    font-size: 18px;
+    font-family: 'Dosis';
+    font-weight: 600;
+    background: #ff7300;
+    color:#fff;
+}
+
+.conenedor__login-register form button:hover {
+    color: #000
 }
 
 .formulario__login{
