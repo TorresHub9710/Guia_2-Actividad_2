@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
     <title>Formulario</title>    
-    <link rel="stylesheet" href="/CSS/formulario.css" />
+    <link rel="stylesheet" href="/CSS/registro.css" />
     <script src="https://kit.fontawesome.com/20e83717b8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,8 +21,8 @@
                         <li><a href="../HTML/principal.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
                         <li><a href="../HTML/buscar.html"><i class="fa-solid fa-magnifying-glass"></i>Búsqueda</a></li>
                         <li><a href="../HTML/tips.html"><i class="fa-regular fa-lightbulb"></i>Tips</a></li>
-                        <li class="menu-selected"><a href="../HTML/formulario.html" class="text-menu-selected"><i class="fa-solid fa-share-from-square"></i>Comparte</a></li>
-                        <li><a href="../HTML/registro.html"><i class="fa-solid fa-address-card"></i>Iniciar Sesión</a></li>
+                        <li><a href="../HTML/formulario.html"><i class="fa-solid fa-share-from-square"></i>Comparte</a></li>
+                        <li class="menu-selected"><a href="../HTML/registro.html" class="text-menu-selected"><i class="fa-solid fa-address-card"></i>Iniciar Sesión</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,55 +37,49 @@
 <!---------------------PORTADA------------------>
         <div class="container-portada">
             <div class="container-text-portada">
-                <h1>Comparte tus recetas con los demás</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Magnam, voluptate perspiciatis odio quaerat eius beatae enim repudiandae, at quidem eum, saepe minima delectus voluptatem aspernatur aperiam fuga impedit inventore. Facere!</p>
+                <h1>Haz parte de nuestra comunidad</h1>
+                <p>Diligencia el siguiente formulario:<br>Así podras registrarte como usuario de FuturisticCousine y compartir tus recetas favoritas con los otros usuarios de esta comunidad.<br>¡Animate!</p>
             </div>
         </div>
     <!-----------------MAIN---------------------------->
-        <div id="container">
-            <h3>Ingresa aquí los datos</h3>
-            <form>
-                <p>Titulo de tu Receta:</p>
-                <input type="text" class="input-text" name="recetaName" id="recetaName" placeholder="Digite el Nombre de la Receta">
-            </form>
-                <br>
-                <br>
-            <form>
-                <p>Tiempo de preparación:</p>
-                <input type="time" class="input-text" name="cookTime" id="cookTime">
-            </form>
-                <br>
-                <br>
-            <form>
-                <p>Lista de ingredientes:</p>
-                <input type="text" class="input-text" name="ingredients" id="ingredients" placeholder="Liste aqui sus ingredientes">
-            </form>
-                <br>
-                <br>
-            <form>
-                <p>Descripción e instrucciones:</p>
-                <input type="text" class="input-text" name="" id="descripcion_E_Instruciones" placeholder="Descripcion e Instrucciones">
-            </form>
-            <br>
-            <form>
-                <p>Sube un video de preparación (Opcional):</p>
-                <input type="text" class="input-text" name="video" id="video" placeholder="Link del video">
-                <button class="button"><span>Cargar vídeo</span></button>
 
-            </form>
-                <br>
-            <form>
-                <p>Coloca una imagen de portada (Opcional):</p>
-                <input type="text" class="input-text" name="image" id="image" placeholder="Link de la imagen">
-                <button class="button">Cargar imagen</button>    
-
-            </form>
-            <br>
-            <br>
-            <button class="button" id="botonGuardar" onclick="captura()"><span>Comparte</span></button>    
-        </div>
-    </div>
+    <main>
+        <main class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para acceder</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+            <!--formulario de logueo y registro-->
+            <div class="conenedor__login-register">
+                <!--Formulario de logueo-->
+                <form action="" class="formulario__login">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Entrar</button>
+                </form>
+                <!--Formulario de Registro-->
+                <form action="" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre Completo">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Telefono">
+                    <input type="date" placeholder="Fecha de Nacimiento">
+                    <input type="text" placeholder="Dirección">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrarse</button>
+                </form>
+            </div>
+        </main>
+    </main>
 
 <!----------------------Footer------------------------>
     <div class="contenedor-footer">
@@ -107,6 +101,6 @@
     </div>
 
     <script src="../JS/formulario.js"></script>
-
+    <script src="../JS/registro.js"></script>
 </body>
 </html>

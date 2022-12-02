@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Poppins:wght@300;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: sans-serif;
 }
-/*-----------------------------------HEADER--------------------------------*/
+/*----------Header------------*/
 header {
     position: fixed;
     top: 0;
@@ -33,7 +35,8 @@ header {
 }
 
 .logo a {
-    color: #000
+    color: #000;
+    text-decoration: none;
 }
 
 .logo a::after {
@@ -80,6 +83,7 @@ header {
 }
 
 .menu ul li a {
+    text-decoration: none;
     color: #777777;
     transition: color 300ms;
 }
@@ -118,13 +122,12 @@ header {
     opacity: 0.8;
 }
 
-/*-------------------------PORTADA--------------------------*/
-
+/*---------Portada----------*/
 .container-portada {
     width: 100%;
     height: 500px;
     position: relative;
-    top: 100px;
+    top: 70px;
     background-image: url(/img/img-portada.jpg);
     opacity: 0.8;
     background-position: center;
@@ -157,7 +160,7 @@ header {
 
 .container-text-portada h1 {
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-family: 'Poppins';
     font-weight: 700;
 }
@@ -166,261 +169,236 @@ header {
     font-size: 20px;
     font-family: 'Dosis';
     font-weight:600;
+    width: 80%;
 }
 
-/*------------------BARRA BÚSQUEDA -------------------*/
+/*----------main------------*/
 
-#barra-busqueda {
-    margin-top: 100px;
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    background-color: rgb(240, 224, 224);
+    margin: 120px auto 0px auto;
+    border-radius: 10px;
+}
+
+#container h3 {
+    text-align: center;
+    padding: 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins';
+    font-size: 35px;
+}
+
+#container p {
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.input-text {
     width: 100%;
-    height: 50px;
-    background: rgb(253, 154, 72);
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.button{
+    display: flex;
+    border-radius: 5px;
+    background-color:#ff831e;
+    font-family: 'Dosis';
+    font-weight: 600;
+    font-size: 20px;
     padding: 5px;
+    margin: 10px auto;
+    border: none;
 }
 
-#input-busqueda {
-    display: block;
+.button:hover{
+    color: #fff;
+}
+
+#descripcion_E_Instruciones{
+    height: 100px;
+    border: 1px solid transparent;
+    text-align: left;
+}
+
+#botonGuardar{
+    display: inline-flex;
+    position: center;
+    margin-left: 50px auto;
+    position: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*-------- Caja de registro---------*/
+
+main{
+    background-image: url(../img/brooke-lark-HlNcigvUi4Q-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
-    height: 40px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 123, 0, 0.815);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: rgb(4, 4, 4);
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+    font-family: 'Dosis';
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.caja__trasera div h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 26px;
+    margin-left: 20px;
+    
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: white;
+    color:#000;
+}
+
+/*------Formularios-------*/
+
+.conenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.conenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.conenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#ff7300;
+}
+
+.conenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+}
+
+.conenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
     font-size: 18px;
     font-family: 'Dosis';
-    font-weight:600;
-    outline: 0;
-    border-radius: 10px;
-    padding-left: 10px;
+    font-weight: 600;
+    background: #ff7300;
+    color:#fff;
 }
 
-#caja-busqueda {
-    margin: 1px 0px 10px 30px;
-    width: 96%;
-    position: relative;
-    background: gainsboro;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 8;
-    display: none;
-    
+.conenedor__login-register form button:hover {
+    color: #000
 }
 
-#caja-busqueda li a {
-    display:block;
-    width: 100%;
-    color: #272626;
-    padding: 12px 20px;
-    font-family: 'Dosis';
-    font-weight:400;
-}
-
-#caja-busqueda li a:hover {
-    background: #ff8827;
-}
-
-#caja-busqueda li a i {
-    margin-right: 10px;
-    color: #272626;
-}
-
-#cover-busqueda {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: 7;
-    display: none;
-}
-
-/*-------------RECETAS MÁS BUSCADAS----------------------------*/
-#titulo-seccion {
-    margin-top: 25px;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Poppins';
-    font-weight: 800;
-}
-
-.recetas-buscadas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.recetas-buscadas article {
-    padding: 40px;
-    width: 600px;
-}
-
-.recetas-buscadas article h2 {
-    margin-bottom: 20px;
-    font-size: 35px;
-    margin-left: 50px;
-    font-family: 'Poppins';
-    font-weight: 700;
-    
-}
-
-
-.contenido-article img {
-    float: left;
-    margin-right: 20px;
-    width: 30%;
-    height:120px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px -15px black;
-}
-
-.contenido-article p {
-    font-size: 20px;
-    font-family: 'Dosis';
-    font-weight:500;
-}
-
-.contenido-article button {
-    padding: 10px 50px;
-    background: #ff8827;
-    margin-top: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 6px;
-    font-family: 'Dosis';
-    font-weight:800;
-}
-/*------------------RECETAS-------------------------------*/
-
-.imagen-receta {
-    width: 40%;
-    margin: 140px auto 60px auto;
+.formulario__login{
+    opacity: 1;
     display: block;
-    border-radius: 30px;
-    box-shadow: 0 15px 25px -15px black;
 }
 
-
-.tabla-receta {
-    width: 30%;
-    margin: auto;
+.formulario__register{
+    display: none;
 }
 
-.tabla-receta th {
-    padding: 10px;
-    font-size: 20px;
-    font-family: 'Poppins';
-    font-weight: 700;
-}
-.tabla-receta td {
-    text-align: center;
-    padding: 10px;
-    border: solid 5px #ff7300;;
-    border-radius: 10px;
-    font-family: 'Dosis';
-    font-weight: 600;
+/*-------- Responsive designt----------*/
+
+@media screen and (max-width: 850px) {
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin:0px;
+        position: absolute;
+    }
+
+    /* ------------ Formularios ------------*/
+
+    .conenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .conenedor__login-register form{
+        position: relative;
+    }
 }
 
-.tabla-receta td i {
-    margin-right: 10px;
-    color:#ff7300
-}
-.tabla-receta td .icono-dificultad {
-    margin-right: 0px;
-    color: #ff7300;
-}
-
-.titulos-receta {
-    color: #ff7300da;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    font-size: 40px;
-    font-family: 'Poppins';
-    font-weight: 800;
-}
-
-.lista-ingredientes {
-    width: 85%;
-    margin: 20px auto 20px auto;
-    padding: 0px;
-}
-.lista-ingredientes li {
-    line-height: 2.5;
-    font-size: 20px;
-    font-family: 'Dosis';
-    font-weight: 600;
-}
-
-.lista-ingredientes li::marker {
-    color: #ff7300;
-    font-size: 35px;
-}
-
-.lista-instrucciones {
-    width: 85%;
-    margin: 20px auto 20px auto;
-}
-.lista-instrucciones li {
-    line-height: 3;
-    font-size: 20px;
-    font-family: 'Dosis';
-    font-weight: 600;
-}
-.lista-instrucciones li::marker {
-    color: #ff7300;
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.tabla-nutricional {
-    margin: auto;
-    border: solid 5px #ff7300;
-    border-radius: 10px;
-    width: 40%;
-}
-.tabla-nutricional th {
-    padding: 10px;
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    font-weight: 700;
-    border: solid 5px #ff7300;;
-    border-radius: 10px;
-}
-.tabla-nutricional td {
-    text-align: center;
-    padding: 10px;
-    border: solid 5px #ff7300;;
-    border-radius: 10px;
-    font-size: 1.2em;
-    font-family: 'Dosis';
-    font-weight: 300;
-}
-
-.descripcion-receta {
-    text-indent: 40px;
-    width: 85%;
-    margin: auto;
-    font-family: 'Dosis';
-    font-weight: 500;
-}
-
-/*------------------MASH UP---------------------------------*/
-
-#titulo-mapa {
-    color: #ff7300da;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 30px;
-    font-family: 'Poppins';
-    font-weight: 800;
-}
-
-
-.mapa {
-    border: solid 10px #ff7300;
-    border-radius: 30px;
-    height: 400px;
-    width: 30%;
-    margin: 20px auto
-}
-/*------------------FOOTER---------------------------------*/
-
+/*------------Footer--------------*/
 .contenedor-footer {
     width: 100%;
     padding: 40px 0px;
@@ -450,6 +428,9 @@ header {
     margin-top: 5px;
 }
 
+.contenedor-footer footer .redes-sociales a {
+    text-decoration: none;
+}
 .contenedor-footer footer .redes-sociales .icono-footer {
     font-size: 30px;
     margin: 20px;
@@ -482,8 +463,7 @@ header {
     font-family: 'Dosis';
     font-weight:700;
 }
-/*-------------- DISEÑO RESPONSIVO ----------------------------*/
-
+/*--------------DISEÑO RESPONSIVO----------------------*/
 @media screen and (max-width: 1220px) {
 
     .contenido-header {
